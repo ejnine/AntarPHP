@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../font/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(../font/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(../font/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-UltraLight;
+  src: url(../font/Gilroy-UltraLight.ttf);
+}
+
+/*ANIMATION LOADER*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  backdrop-filter: blur(35px);
+  z-index: 1001;
+}
+
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+/*ANIMATION LOADER*/
+.section:first-child {
+  background-image: url(../media/main_wallpaper.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000;
+  text-align: center;
+}
+
+.section:nth-child(2) {
+  background: #000000;
+}
+
+.section:last-child {
+  background: #555555;
+}
+
+.maneLogo {
+  margin: auto;
+  width: 80%;
+  max-width: 920px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.container {
+  margin-right: 60px;
+  /* max-width: 100%; */
+  display: inline-block;
+  /* border: 1px solid white; */
+  padding: 0%;
+  text-align: right;
+}
+
+a.headerlink:hover,
+a.headerlink:active,
+a.headerlink {
+  text-decoration: none;
+  color: #ffffff;
+  /* border: 1px solid white; */
+  margin-right: 50px;
+}
+
+/*Меню*/
+.navbar {
+  min-height: 70px;
+  /* border: 1px solid white; */
+  background-color: #00000000;
+  font-size: 25px;
+  font-family: "Gilroy-Bold";
+  padding-top: 30px;
+  text-align: right;
+}
+
+.nav>li>a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav>li>a:hover {
+  background-color: #00000000;
+}
+
+.nav>li {
+  /* border: 1px solid white; */
+  /* width: 200px; */
+  height: 40px;
+  text-align: center;
+}
+
+.bron {
+  /* width: 217px; */
+  height: 37px;
+  border: 2px solid white;
+  transition: .4s;
+  text-align: center;
+  background-color: #00000000;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bron:hover {
+  background-color: #fff;
+  color: black;
+  box-shadow: -8px 8px #808080;
+  transition: .4s;
+}
+
+.menu {
+  border-bottom: 2px solid white;
+}
+
+.logoInfo {
+  font-family: "Gilroy-UltraLight";
+  color: white;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid white; */
+}
+
+.dateTime {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.date1 {
+  margin-right: 70px;
+}
+
+.infoContact {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.leftMap {
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
+}
+
+#map {
+  overflow: auto;
+  filter: invert(1);
+}
+
+.rightInfo {
+  width: 50%;
+  height: 100%;
+  background-image: url(../media/bgfooter.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+}
+
+.info {
+  font-family: "Gilroy-Medium";
+  font-size: 40px;
+  letter-spacing: 20px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.contacts {
+  /* border: 2px solid white; */
+  max-width: 568px;
+  text-align: left;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.mailPhone {
+  /* border: 1px solid white; */
+  font-family: "Gilroy-Regular";
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.date {
+  margin-bottom: 0px;
+}
+
+.word {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+
+#maildop {
+  /* border: 1px solid rgb(136, 136, 136); */
+  display: flex;
+}
+
+#mailtime {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1350px) {
+
+  /* .navbar{
+    text-align: center;
+  } */
+  .info {
+    font-family: "Gilroy-Medium";
+    font-size: 30px;
+    letter-spacing: 15px;
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  .mailPhone {
+    /* border: 1px solid white; */
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logoInfo {
+    font-size: 18px;
+  }
+
+  .maneLogo {
+    margin-bottom: 50px;
+  }
+
+  .dateTime {
+    margin-top: 12px;
+  }
+
+  .infoContact {
+    display: inline-block;
+  }
+
+  .leftMap {
+    width: 100%;
+    height: 50%;
+  }
+
+  .rightInfo {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* .card{
+    padding: 80px 30px;
+  } */
+  .menu {
+    border-bottom: none;
+  }
+
+  .headerlink {
+    text-align: left;
+  }
+
+  .container {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .info {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    letter-spacing: 15px;
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  .mailPhone {
+    /* border: 1px solid white; */
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .navbar {
+    font-size: 20px;
+  }
+}
